@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+        <!-- Page Title -->
+		<div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+					{% if LANGUAGE_CODE == 'en' %}
+						<h1>Contact Us</h1>
+					{% else %}
+						<h1>Επικοινωνια</h1>
+					{% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+      <div class="section">
+	    	<div class="container">
+	        	<div class="row">
+	        		<div class="col-sm-7">
+	        			<!-- Map -->
+								<div id="map"></div>
+								<script src="http://www.latlong.net/c/?lat=37.995035&long=23.642978"
+										async defer></script>
+
+	        			<!-- End Map -->
+	        		</div>
+							<div class="col-sm-5">
+								<!-- Contact Info -->
+								<p class="contact-us-details">
+									{% if LANGUAGE_CODE == 'en' %}
+										<b>Company Name:</b> ΡΕΜΟΥΝΔΟΣ ΘΕΟΔΩΡΟΣ Ε.Ε. <br/>
+										<b>Address:</b> ΔΕΡΒΕΝΑΚΙΩΝ 9, 18122, <br/>
+										<b>Phone:</b> 2107613056,2104944519 <br/>
+										<b>Mobile Τηλέφωνο:</b> 6972176798 <br/>
+										<b>Fax:</b>  2104944519 <br/>
+										<b>Email:</b>  <a href="mailto:getintoutch@yourcompanydomain.com">clima_aristotehniki@yahoo.gr </a>
+									{% else %}
+										<b>Επωνυμία:</b> ΡΕΜΟΥΝΔΟΣ ΘΕΟΔΩΡΟΣ Ε.Ε. <br/>
+										<b>Διεύθυνση:</b> ΔΕΡΒΕΝΑΚΙΩΝ 9, 18122, <br/>
+										<b>Τηλέφωνο:</b> 2107613056,2104944519 <br/>
+										<b>Κινητό Τηλέφωνο:</b> 6972176798 <br/>
+										<b>Fax:</b>  2104944519 <br/>
+										<b>Email:</b>  <a href="mailto:getintoutch@yourcompanydomain.com">clima_aristotehniki@yahoo.gr </a>
+									{% endif %}
+								</p>
+								<!-- End Contact Info -->
+							</div>
+						</div>
+	    	</div>
+	    </div>
+
+{% endblock %}

@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% if LANGUAGE_CODE == 'el' %}
+					<h1>Τα Προιόντα Μας</h1>
+				{% else %}
+					<h1>Our Products List</h1>
+				{% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section section-white">
+  <div class="container">
+    	<div class="row">
+    		<div class="span12 text-center">
+					<h4>Other components are easy to discover - please check sample pages ("Pages" menu)</h4>
+					<h6>P.S. More information about each component could be found in template documentation which comes with a purchase</h6>
+	        </div>
+	      </div>
+	  </div>
+</div>
+
+<div class="eshop-section section">
+  <div class="container">
+    <div class="row">
+      {% for product in products %}
+        {% if LANGUAGE_CODE == 'el' %}
+        <div class="col-sm-4">
+          <div class="shop-item">
+            <div class="image">
+              <a href="{% url 'product_detail' slug=product.slug %}"><img src="/media/{{product.image}}" alt="{{product.name}}"></a>
+            </div>
+            <div class="title">
+              <h3><a href="#">{{product.name}}</a></h3>
+            </div>
+            <div class="description">
+              {{product.short_description|safe}}
+            </div>
+            <div class="actions">
+              <a href="{% url 'product_detail' slug=product.slug %}" class="btn"><i class="icon-shopping-cart icon-white"></i>Λεπτομέρειες</a>
+            </div>
+          </div>
+        </div>
+        {% else %}
+        <div class="col-sm-4">
+          <div class="shop-item">
+            <div class="image">
+              <a href="{% url 'product_detail' pk=product.pk %}"><img src="/media/{{product.image}}" alt="{{product.name_en}}"></a>
+            </div>
+            <div class="title">
+              <h3><a href="#">{{product.name_en}}</a></h3>
+            </div>
+            <div class="description">
+              {{product.short_description_en|safe}}
+            </div>
+            <div class="actions">
+              <a href="{% url 'product_detail' pk=product.pk %}" class="btn"><i class="icon-shopping-cart icon-white"></i>View Details</a>
+            </div>
+          </div>
+        </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div class="pagination-wrapper ">
+      <ul class="pagination pagination-lg">
+        <li class="disabled"><a href="#">Previous</a></li>
+        <li class="active"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">6</a></li>
+        <li><a href="#">7</a></li>
+        <li><a href="#">8</a></li>
+        <li><a href="#">9</a></li>
+        <li><a href="#">10</a></li>
+        <li><a href="#">Next</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

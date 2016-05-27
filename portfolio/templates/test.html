@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+{{page}}
+{% for page in page %}
+<h1>Title: {{page.name}}</h1>
+{{page.content}}
+{% endfor %}
+{% endblock content %}

@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+<div class="container">
+ <div class="row">
+   <div class="col-md-12">
+     {% if LANGUAGE_CODE == 'el' %}
+      <h1>Τα Εργα Μας</h1>
+    {% else %}
+      <h1>Our Projects</h1>
+    {% endif %}
+   </div>
+ </div>
+</div>
+</div>
+
+ <div class="section">
+   <div class="container">
+     <div class="row">
+       {% for project in projects %}
+         {% if LANGUAGE_CODE == 'el' %}
+           <div class="col-sm-6">
+             <div class="portfolio-item">
+               <div class="portfolio-image">
+                 <a href="{% url 'portfolio_detail' pk=project.pk %}"><img src="../media/{{project.image}}"
+                   alt="{{project.name}}"></a>
+               </div>
+               <div class="portfolio-info-fade">
+                 <ul>
+                   <li class="portfolio-project-name">{{project.name}}</li>
+                   <li>{{project.short_description}}</li>
+                   <li>Πελάτης</li>
+                   <li class="read-more"><a href="{% url 'portfolio_detail' pk=project.pk %}" class="btn">Περισσότερες Πληροφορίες</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         {% else %}
+           <div class="col-sm-6">
+             <div class="portfolio-item">
+               <div class="portfolio-image">
+                 <a href="{% url 'portfolio_detail' pk=project.pk %}"><img src="/media/{{project.image}}"
+                   alt="{{project.name}}"></a>
+               </div>
+               <div class="portfolio-info-fade">
+                 <ul>
+                   <li class="portfolio-project-name">{{project.name_en}}</li>
+                   <li>{{project.short_description_en}}</li>
+                   <li>Project Client</li>
+                   <li class="read-more"><a href="{% url 'portfolio_detail' pk=project.pk %}" class="btn">Read more</a></li>
+                 </ul>
+               </div>
+             </div>
+           </div>
+         {% endif %}
+       {% endfor %}
+   </div>
+  </div>
+</div>
+
+{% endblock %}

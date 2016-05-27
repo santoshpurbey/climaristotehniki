@@ -1,0 +1,106 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+      {% if LANGUAGE_CODE == 'el' %}
+        <h1>{{project.short_description}}</h1>
+      {% else %}
+        <h1>{{project.short_description_en}}</h1>
+      {% endif %}
+    </div>
+  </div>
+</div>
+</div>
+
+  <div class="section">
+  <div class="container">
+  <div class="row">
+    <!-- Image Column -->
+    <div class="col-sm-6">
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <a href="#"><img src="/media/{{project.image}}" alt="{{project.name}}"></a>
+        </div>
+      </div>
+    </div>
+    <!-- End Image Column -->
+    <!-- Project Info Column -->
+    <div class="portfolio-item-description col-sm-6">
+      {% if LANGUAGE_CODE == 'el' %}
+      <h3>{{project.name}}</h3>
+      {{project.description|safe}}
+      <ul class="no-list-style">
+        <li><b>Πελάτης:</b> Some Client LTD</li>
+        <li><b>Ημερομηνία:</b> {{project.start_date}}	</li>
+        <li><b>Τεχνολογίες:</b> HTML5, CSS3, jQuery, PHP, MySQL</li>
+        <li class="portfolio-visit-btn"><a href="#" class="btn">Visit Website</a></li>
+      </ul>
+      {% else %}
+      <h3>{{project.name_en}}</h3>
+      {{project.description_en|safe}}
+      <ul class="no-list-style">
+        <li><b>Client:</b> Some Client LTD</li>
+        <li><b>Date:</b> {{project.start_date}}	</li>
+        <li><b>Technologies:</b> HTML5, CSS3, jQuery, PHP, MySQL</li>
+      </ul>
+      {% endif %}
+    </div>
+    <!-- End Project Info Column -->
+  </div>
+  <!-- Related Projects -->
+  <h3>Related Projects</h3>
+  <div class="row">
+    <div class="col-md-4 col-sm-6">
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <a href="#"><img src="img/portfolio3.jpg" alt="Project Name"></a>
+        </div>
+        <div class="portfolio-info-fade">
+          <ul>
+            <li class="portfolio-project-name">Project Name</li>
+            <li>Website design & Development</li>
+            <li>Client: Some Client LTD</li>
+            <li class="read-more"><a href="#" class="btn">Read more</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <a href="#"><img src="img/portfolio4.jpg" alt="Project Name"></a>
+        </div>
+        <div class="portfolio-info-fade">
+          <ul>
+            <li class="portfolio-project-name">Project Name</li>
+            <li>Website design & Development</li>
+            <li>Client: Some Client LTD</li>
+            <li class="read-more"><a href="#" class="btn">Read more</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="portfolio-item">
+        <div class="portfolio-image">
+          <a href="#"><img src="img/portfolio6.jpg" alt="Project Name"></a>
+        </div>
+        <div class="portfolio-info-fade">
+          <ul>
+            <li class="portfolio-project-name">Project Name</li>
+            <li>Website design & Development</li>
+            <li>Client: Some Client LTD</li>
+            <li class="read-more"><a href="#" class="btn">Read more</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Related Projects -->
+</div>
+</div>
+{% endblock content %}

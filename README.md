@@ -1,0 +1,2 @@
+# climaristotehniki
+Django Web Application

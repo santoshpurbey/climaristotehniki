@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+<!-- Page Title -->
+    <div class="section section-breadcrumbs">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+            {% if LANGUAGE_CODE == 'en' %}
+						  <h1>Frequently Asked Questions</h1>
+            {% else %}
+              <h1>Συχνές Ερωτήσεις</h1>
+            {% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+
+    <div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 faq-wrapper">
+						<div class="panel-group" id="accordion2">
+              {% if LANGUAGE_CODE == 'en' %}
+							  <h3>General Questions</h3>
+              {% else %}
+                <h3>Γενικές Ερωτήσεις</h3>
+              {% endif %}
+
+              {% for faq in faqs %}
+							<div class="panel panel-default">
+								<div class="panel-heading">
+									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse{{faq.id}}">
+                    {% if LANGUAGE_CODE == 'en' %}
+										  {{faq.question_en|safe}}
+                    {% else %}
+                      {{faq.question|safe}}
+                    {% endif %}
+									</a>
+								</div>
+								<div id="collapse{{faq.id}}" class="accordion-body collapse">
+									<div class="accordion-inner">
+                    {% if LANGUAGE_CODE == 'en' %}
+										<div class="answer">Answer:</div>
+                    {% else %}
+                    <div class="answer">Απάντηση:</div>
+                    {% endif %}
+										<p>
+                      {% if LANGUAGE_CODE == 'en' %}
+                        {{faq.answer_en|safe}}
+                      {% else %}
+                        {{faq.answer|safe}}
+                      {% endif %}
+                    </p>
+									</div>
+								</div>
+							</div>
+              {% endfor %}
+						</div>
+					</div>
+				</div>
+			</div>
+	  </div>
+
+{% endblock content %}
