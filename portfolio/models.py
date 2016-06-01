@@ -108,6 +108,10 @@ class Faq(models.Model):
     answer_en = RichTextField()
     category = models.ForeignKey(Category, related_name='faqs', default=1)
 
+    def __unicode__(self):
+        return self.question
+
+
 
 class Page(models.Model):
     STATUS_CHOICES = (

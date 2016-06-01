@@ -30,7 +30,7 @@ class ProjectImageAdmin(admin.ModelAdmin):
     list_display_links = ('project',)
 
 class FaqImageAdmin(admin.ModelAdmin):
-    list_display = ('question', 'answer',)
+    list_display = ('question', 'category',)
 
 class PageAdmin(admin.ModelAdmin):
     model = Page
