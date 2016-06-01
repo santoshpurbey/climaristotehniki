@@ -29,7 +29,7 @@ class ProjectImageAdmin(admin.ModelAdmin):
     list_display = ('project', 'image',)
     list_display_links = ('project',)
 
-class FaqImageAdmin(admin.ModelAdmin):
+class FaqAdmin(admin.ModelAdmin):
     list_display = ('question', 'category',)
 
 class PageAdmin(admin.ModelAdmin):
@@ -42,6 +42,6 @@ admin.site.register(Project, ProjectAdmin)
 admin.site.register(Product, ProductAdmin)
 admin.site.register(ProjectImage, ProjectImageAdmin)
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Faq, FaqImageAdmin)
+admin.site.register(Faq, FaqAdmin)
 admin.site.register(Page, PageAdmin)
 admin.site.register(Slider, SliderAdmin)

@@ -108,6 +108,11 @@ class Faq(models.Model):
     answer_en = RichTextField()
     category = models.ForeignKey(Category, related_name='faqs', default=1)
 
+    class Meta:
+        ordering = ('name',)
+        verbose_name = "faq"
+        verbose_name_plural = "faqs"
+
     def __unicode__(self):
         return self.question
 
@@ -120,11 +125,11 @@ class Page(models.Model):
         )
     title = models.CharField(max_length=200)
     title_en = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=200, unique_for_date='publish')
+    slug = models.SlugField(max_length=200,unique_for_date='publish')
     body = RichTextField()
     body_en = RichTextField()
-    publish = models.DateTimeField(auto_now=True)
-    status = models.CharField(max_length=10, choices=STATUS_CHOICES, default='draft')
+    publish = models.DateTimeField( auto_now=True)
+    status = models.CharField(max_length=10,choices=STATUS_CHOICES,default='draft')
     image = models.ImageField(upload_to='page')
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
