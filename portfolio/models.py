@@ -102,14 +102,14 @@ class Product(models.Model):
 
 
 class Faq(models.Model):
-    question = RichTextField()
-    question_en = RichTextField()
+    question = models.CharField(max_length=200)
+    question_en = models.CharField(max_length=200)
     answer = RichTextField()
     answer_en = RichTextField()
     category = models.ForeignKey(Category, related_name='faqs', default=1)
 
     class Meta:
-        ordering = ('name',)
+        ordering = ('question',)
         verbose_name = "faq"
         verbose_name_plural = "faqs"
 
