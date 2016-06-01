@@ -20,14 +20,18 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12 faq-wrapper">
+            {% for category in categories%}
 						<div class="panel-group" id="accordion2">
               {% if LANGUAGE_CODE == 'en' %}
-							  <h3>General Questions</h3>
+							  <h3>{{category.name_en|safe}}</h3>
               {% else %}
-                <h3>Γενικές Ερωτήσεις</h3>
+                <h3>{{category.name|safe}}</h3>
               {% endif %}
 
               {% for faq in faqs %}
+              {{faq.category }}
+              {{category.name}}
+              {% if faq.category == category %}
 							<div class="panel panel-default">
 								<div class="panel-heading">
 									<a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapse{{faq.id}}">
@@ -55,8 +59,10 @@
 									</div>
 								</div>
 							</div>
+              {% endif %}
               {% endfor %}
 						</div>
+            {% endfor %}
 					</div>
 				</div>
 			</div>

@@ -19,7 +19,11 @@ def contact(request):
 
 def faq(request):
     faqs = Faq.objects.all()
-    return render(request, 'faq.html', {'faqs': faqs})
+    categories = Category.objects.all()
+    return render(request, 'faq.html', {
+        'faqs': faqs,
+        'categories': categories,
+        })
 
 
 def portfolio_list(request):
