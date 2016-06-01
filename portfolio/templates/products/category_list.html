@@ -19,6 +19,7 @@
 <div class="section">
   <div class="container">
     {% for category in categories %}
+    {% if category.products.all %}
       <div class="row service-wrapper-row">
         <div class="col-sm-4">
           <div class="service-image">
@@ -44,6 +45,7 @@
       </div>
 
   </div>
+  {% endif %}
   {% endfor %}
 </div>
 

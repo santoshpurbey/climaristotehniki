@@ -21,6 +21,7 @@
 				<div class="row">
 					<div class="col-md-12 faq-wrapper">
             {% for category in categories%}
+            {% if category.faqs.all %}
 						<div class="panel-group" id="accordion2">
               {% if LANGUAGE_CODE == 'en' %}
 							  <h3>{{category.name_en|safe}}</h3>
@@ -60,6 +61,7 @@
               {% endif %}
               {% endfor %}
 						</div>
+            {% endif %}
             {% endfor %}
 					</div>
 				</div>
