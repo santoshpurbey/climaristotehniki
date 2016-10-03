@@ -1,4 +1,5 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, render_to_response
+from django.template import RequestContext
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
 from .models import Project, Product, Faq, Page, Category
@@ -67,4 +68,13 @@ def product_detail(request, slug):
 
 def page_detail(request, pk):
     page = get_object_or_404(Page, pk=pk)
-    return render(request, 'page/page_detail.html', {'page': page })
+    return render(request, 'page/page_detail.html', {'page': page})
+
+
+# redirect to 404
+
+def handler404(request):
+    response = render_to_response('404.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 404
+    return response
