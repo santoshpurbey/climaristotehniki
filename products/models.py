@@ -10,10 +10,12 @@ from portfolio.models import Category
 
 
 class Category(models.Model):
+    image = models.ImageField(upload_to='products/category', blank=True)
     name = models.CharField(max_length=200)
     name_en = models.CharField(max_length=200)
     description = RichTextField()
     description_en = RichTextField()
+
     slug = models.SlugField(max_length=50, unique=True)
 
     class Meta:
