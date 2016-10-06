@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<!-- Page Title -->
+<div class="section section-breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        {% if LANGUAGE_CODE == 'el' %}
+					<h1>Κατηγορίες Προιόντων</h1>
+				{% else %}
+					<h1>Our Product Category List</h1>
+				{% endif %}
+      </div>
+    </div>
+  </div>
+</div>
+<div class="section">
+  <div class="container">
+    {% for category in categories %}
+    {% if category.products.all %}
+      <div class="row service-wrapper-row">
+        <div class="col-sm-4">
+          <div class="service-image">
+            <a href="{% url 'productlist_by_category' category_slug=category.slug %}">
+              <img src="" alt="Color Schemes">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-8">
+        {% if LANGUAGE_CODE == 'el' %}
+        <a href="{% url 'productlist_by_category' category_slug=category.slug %}">
+          <h3>{{category.name}}</h3>
+        </a>
+          <p>
+          {{category.description|safe}}
+          </p>
+        {% else %}
+          <h3>{{category.name_en}}</h3>
+          <p>
+            {{category.description_en|safe}}</p>
+          </p>
+        {% endif %}
+      </div>
+
+  </div>
+  {% endif %}
+  {% endfor %}
+</div>
+
+{% endblock content %}

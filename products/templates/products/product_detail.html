@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+        <!-- Page Title -->
+<div class="section section-breadcrumbs">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% if LANGUAGE_CODE == 'el' %}
+					<h1>Λεπτομέρειες Προιόντος</h1>
+				{% else %}
+					<h1>Product Details</h1>
+				{% endif %}
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+    <!-- Product Image -->
+    <div class="col-sm-6">
+      <div class="product-imag	e-large">
+        <img src="/media/{{product.image}}" alt="{{product.name}}">
+      </div>
+    </div>
+    <!-- End Product Image & Available Colors -->
+		{% if LANGUAGE_CODE == 'el' %}
+    <!-- Product Summary & Options GR -->
+    <div class="col-sm-6 product-details">
+	    <h4>{{product.name}}</h4>
+	    <h5>{{product.short_description|safe}}</h5>
+	  </div>
+    <!-- End Product Summary & Options GR -->
+
+    <!-- Full Description & Specification GR -->
+    <div class="col-sm-12">
+      <div class="tabbable">
+        <!-- Tabs -->
+	      <ul class="nav nav-tabs product-details-nav">
+	        <li class="active"><a href="#tab1" data-toggle="tab">Περιγραφή</a></li>
+	        <li><a href="#tab2" data-toggle="tab">Χαρακτηριστικά</a></li>
+	      </ul>
+	      <!-- Tab Content (Full Description) -->
+	      <div class="tab-content product-detail-info">
+	        <div class="tab-pane active" id="tab1">
+	          <h4>Περιγραφή Προιόντος</h4>
+	          {{product.description|safe}}
+	        </div>
+	        <!-- Tab Content (Specification) -->
+	        <div class="tab-pane" id="tab2">
+	          {{product.specifications|safe}}
+	        </div>
+	      </div>
+    	</div>
+    </div>
+    <!-- End Full Description & Specification GR -->
+		{% else %}
+		<!-- Product Summary & Options EN -->
+		<div class="col-sm-6 product-details">
+			<h4>{{product.name_en}}</h4>
+			<h5>42EQV (XPower Gold)</h5>
+				{{product.short_description_en|safe}}
+		</div>
+		<!-- End Product Summary & Options EN-->
+
+		<!-- Full Description & Specification EN-->
+		<div class="col-sm-12">
+			<div class="tabbable">
+				<!-- Tabs -->
+				<ul class="nav nav-tabs product-details-nav">
+					<li class="active"><a href="#tab1" data-toggle="tab">Description</a></li>
+					<li><a href="#tab2" data-toggle="tab">Specification</a></li>
+				</ul>
+				<!-- Tab Content (Full Description) -->
+				<div class="tab-content product-detail-info">
+					<div class="tab-pane active" id="tab1">
+						<h4>Product Description</h4>
+						{{product.description_en|safe}}
+					</div>
+					<!-- Tab Content (Specification) -->
+					<div class="tab-pane" id="tab2">
+						{{product.specifications_en|safe}}
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- End Full Description & Specification EN -->
+		{% endif %}
+	</div>
+</div>
+</div>
+{% endblock %}
