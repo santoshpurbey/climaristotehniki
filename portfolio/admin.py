@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # import model
-from portfolio.models import Project, ProjectImage, Product, Category, Faq, Page, Slider
+from .models import Project, ProjectImage, Category, Faq, Page, Slider
 
 class SliderAdmin(admin.ModelAdmin):
     model = Slider
@@ -10,13 +10,6 @@ class SliderAdmin(admin.ModelAdmin):
 class ProjectAdmin(admin.ModelAdmin):
     model = Project
     list_display = ('name', 'short_description', 'start_date',)
-    prepopulated_fields = {'slug': ('name',)}
-
-
-class ProductAdmin(admin.ModelAdmin):
-    model = Product
-    list_display = ('name', 'slug', 'created', 'updated')
-    # list_filter = ('created', 'updated')
     prepopulated_fields = {'slug': ('name',)}
 
 
@@ -39,7 +32,6 @@ class PageAdmin(admin.ModelAdmin):
 
 # Register your models here.
 admin.site.register(Project, ProjectAdmin)
-admin.site.register(Product, ProductAdmin)
 admin.site.register(ProjectImage, ProjectImageAdmin)
 admin.site.register(Category, CategoryAdmin)
 admin.site.register(Faq, FaqAdmin)

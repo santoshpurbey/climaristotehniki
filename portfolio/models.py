@@ -9,8 +9,8 @@ class Project(models.Model):
     name = models.CharField(max_length=200)
     name_en = models.CharField(max_length=200)
     slug = models.SlugField(max_length=50, unique=True)
-    short_description = models.CharField(max_length=200)
-    short_description_en = models.CharField(max_length=200)
+    short_description = models.CharField(max_length=200, blank=True)
+    short_description_en = models.CharField(max_length=200, blank=True)
     description = RichTextField()
     description_en = RichTextField()
     start_date = models.DateField(blank=True, null=True)
@@ -75,32 +75,6 @@ class Category(models.Model):
         return self.name
 
 
-class Product(models.Model):
-    category = models.ForeignKey(Category, related_name='products', default=1)
-    name = models.CharField(max_length=200)
-    name_en = models.CharField(max_length=200)
-    slug = models.SlugField(max_length=50, unique=True)
-    short_description = models.TextField()
-    short_description_en = models.TextField()
-    description = RichTextField()
-    description_en = RichTextField()
-    image = models.ImageField(upload_to='products/%Y/%m/%d', blank=True)
-    specifications = RichTextField()
-    specifications_en = RichTextField()
-    created = models.DateTimeField(auto_now_add=True)
-    updated = models.DateTimeField(auto_now=True)
-
-    class Meta:
-        ordering = ('name',)
-        index_together = (('id', 'slug'),)
-
-    def __unicode__(self):
-        return self.name
-
-    def __str__(self):
-        return self.name
-
-
 class Faq(models.Model):
     question = models.CharField(max_length=200)
     question_en = models.CharField(max_length=200)
@@ -130,7 +104,7 @@ class Page(models.Model):
     body_en = RichTextField()
     publish = models.DateTimeField( auto_now=True)
     status = models.CharField(max_length=10,choices=STATUS_CHOICES,default='draft')
-    image = models.ImageField(upload_to='page')
+    image = models.ImageField(upload_to='page', blank=True)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
 

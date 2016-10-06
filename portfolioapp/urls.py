@@ -13,7 +13,6 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
-from portfolio import views
 from django.conf import settings
 from django.conf.urls.static import static
 from django.conf.urls import include, url, patterns
@@ -26,23 +25,19 @@ from django.conf.urls.i18n import i18n_patterns
 from solid_i18n.urls import solid_i18n_patterns
 from django.utils.translation import ugettext_lazy as _
 
-
-urlpatterns = solid_i18n_patterns('',
-        url(r'^$', views.home, name='home'),
-        url(r'^about/$', views.about, name='about'),
-        url(r'^work/$', views.portfolio_list, name='portfolio_list'),
-        url(r'^faq/$', views.faq, name='faq'),
-        url(r'^project/(?P<pk>[0-9]+)/$', views.portfolio_detail, name='portfolio_detail'),
-        url(r'^categories/$', views.category_list, name='category_list'),
-        url(r'^categories/(?P<category_slug>[-\w]+)/$', views.productlist_by_category, name='productlist_by_category'),
-        url(r'^product/(?P<slug>[-\w]+)/$', views.product_detail, name='product_detail'),
-        url(r'^contact/$', views.contact, name='contact'),
-        url(r'^page/(?P<pk>[0-9]+)/$', views.page_detail, name='page_detail'),
+from portfolio import urls
+from products import urls
+# with i18n
+urlpatterns = solid_i18n_patterns(
+    url(r'^',  include('portfolio.urls')),
+    url(r'^products/', include('products.urls')),
 )
 
 # without i18n
 urlpatterns += patterns('',
         url(r'^admin/', include(admin.site.urls)),
+        url(r'^',  include('portfolio.urls')),
+        url(r'^products/', include('products.urls')),
         url(r'^i18n/', include('django.conf.urls.i18n')),
 )+ static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 
