@@ -2,7 +2,7 @@ from django.shortcuts import render, get_object_or_404, render_to_response
 from django.template import RequestContext
 from django.utils import timezone
 from django.utils.translation import ugettext_lazy as _
-from .models import Project, Faq, Page, Category
+from .models import Project, Category
 
 
 def home(request):
@@ -14,17 +14,9 @@ def about(request):
     return render(request, 'about.html', {})
 
 
+
 def contact(request):
     return render(request, 'contact.html', {})
-
-
-def faq(request):
-    faqs = Faq.objects.all()
-    categories = Category.objects.all()
-    return render(request, 'faq.html', {
-        'faqs': faqs,
-        'categories': categories,
-        })
 
 
 def portfolio_list(request):
@@ -35,11 +27,6 @@ def portfolio_list(request):
 def portfolio_detail(request, pk):
     project = get_object_or_404(Project, pk=pk)
     return render(request, 'portfolio/portfolio_detail.html', {'project': project})
-
-
-def page_detail(request, pk):
-    page = get_object_or_404(Page, pk=pk)
-    return render(request, 'page/page_detail.html', {'page': page})
 
 
 # redirect to 404

@@ -1,13 +1,13 @@
 {% extends 'base.html' %}
 {% load staticfiles %}
-{% load my_tags %}
+{% load pages_tags %}
 {% block content %}
 <!-- Homepage Slider -->
   <div class="homepage-slider">
     <div id="sequence">
       <ul class="sequence-canvas">
         <!-- Slide -->
-        {% show_slides my_tags  %}
+        {% show_slides pages_tags  %}
         <!-- End Slide -->
       </ul>
       <div class="sequence-pagination-wrapper">

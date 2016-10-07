@@ -53,8 +53,6 @@ class Slider(models.Model):
 class Category(models.Model):
     name = models.CharField(max_length=200)
     name_en = models.CharField(max_length=200)
-    description = RichTextField()
-    description_en = RichTextField()
     slug = models.SlugField(max_length=50, unique=True)
 
     class Meta:
@@ -71,11 +69,11 @@ class Category(models.Model):
 
 
 class Faq(models.Model):
+    category = models.ForeignKey(Category, related_name='faqs', default=1)
     question = models.CharField(max_length=200)
     question_en = models.CharField(max_length=200)
     answer = RichTextField()
     answer_en = RichTextField()
-    category = models.ForeignKey(Category, related_name='faqs', default=1)
 
     class Meta:
         ordering = ('question',)

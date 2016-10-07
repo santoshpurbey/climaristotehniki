@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 # Create your views here.
 
-
+from .models import Faq, Category, Page
 def page_detail(request, pk):
     page = get_object_or_404(Page, pk=pk)
     return render(request, 'page/page_detail.html', {'page': page})

@@ -1,11 +1,8 @@
 from django.contrib import admin
 
 # import model
-from .models import Project, ProjectImage, Category, Faq, Page, Slider
+from .models import Project, ProjectImage, Category
 
-class SliderAdmin(admin.ModelAdmin):
-    model = Slider
-    list_display = ('title', 'subtitle')
 
 class ProjectAdmin(admin.ModelAdmin):
     model = Project
@@ -22,18 +19,8 @@ class ProjectImageAdmin(admin.ModelAdmin):
     list_display = ('project', 'image',)
     list_display_links = ('project',)
 
-class FaqAdmin(admin.ModelAdmin):
-    list_display = ('question', 'category',)
-
-class PageAdmin(admin.ModelAdmin):
-    model = Page
-    list_display = ('title', 'slug', 'status', 'created', 'updated')
-    prepopulated_fields = {'slug': ('title',)}
 
 # Register your models here.
 admin.site.register(Project, ProjectAdmin)
 admin.site.register(ProjectImage, ProjectImageAdmin)
 admin.site.register(Category, CategoryAdmin)
-admin.site.register(Faq, FaqAdmin)
-admin.site.register(Page, PageAdmin)
-admin.site.register(Slider, SliderAdmin)

@@ -31,6 +31,7 @@ from products import urls
 urlpatterns = solid_i18n_patterns(
     url(r'^',  include('portfolio.urls')),
     url(r'^products/', include('products.urls')),
+    url(r'^',  include('pages.urls')),
 )
 
 # without i18n
