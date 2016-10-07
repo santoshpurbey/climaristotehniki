@@ -1,10 +1,11 @@
 [
 {
   "fields": {
-    "slug": "oikiaka-proionta",
-    "name_en": "Residential",
     "name": "\u039f\u03b9\u03ba\u03b9\u03b1\u03ba\u03ac \u03a0\u03c1\u03bf\u03ca\u03cc\u03bd\u03c4\u03b1",
+    "image": "products/category/heating.png",
     "description_en": "<p>Toshiba&rsquo;s modern &amp; stylish residential systems are the absolute solution for all the family. They offer comfort, Indoor Air Quality, low noise and extremely high energy savings as they have among the highest SCOPs &amp; SEERs in the market.</p>\r\n",
+    "name_en": "Residential",
+    "slug": "oikiaka-proionta",
     "description": "<p>&Tau;&alpha; &mu;&omicron;&nu;&tau;\u03ad&rho;&nu;&alpha; &kappa;&alpha;&iota; &kappa;&omicron;&mu;&psi;&omicron;\u03cd &sigma;&chi;&epsilon;&delta;&iota;&alpha;&sigma;&mu;&omicron;\u03cd &omicron;&iota;&kappa;&iota;&alpha;&kappa;\u03ac &sigma;&upsilon;&sigma;&tau;\u03ae&mu;&alpha;&tau;&alpha; &tau;&eta;&sigmaf; Toshiba, &epsilon;\u03af&nu;&alpha;&iota; &eta; &kappa;&alpha;&tau;\u03ac&lambda;&lambda;&eta;&lambda;&eta; &lambda;\u03cd&sigma;&eta; &gamma;&iota;&alpha; \u03cc&lambda;&eta; &tau;&eta;&nu; &omicron;&iota;&kappa;&omicron;&gamma;\u03ad&nu;&epsilon;&iota;&alpha;. &Pi;&rho;&omicron;&sigma;&phi;\u03ad&rho;&omicron;&upsilon;&nu; \u03ac&nu;&epsilon;&sigma;&eta;, &pi;&omicron;&iota;\u03cc&tau;&eta;&tau;&alpha; &epsilon;&sigma;&omega;&tau;&epsilon;&rho;&iota;&kappa;&omicron;\u03cd &alpha;\u03ad&rho;&alpha;, &chi;&alpha;&mu;&eta;&lambda;\u03ac &epsilon;&pi;\u03af&pi;&epsilon;&delta;&alpha; &theta;&omicron;&rho;\u03cd&beta;&omicron;&upsilon; &kappa;&alpha;&iota; &epsilon;&xi;&alpha;&iota;&rho;&epsilon;&tau;&iota;&kappa;\u03ac &upsilon;&psi;&eta;&lambda;\u03ae &epsilon;&xi;&omicron;&iota;&kappa;&omicron;&nu;\u03cc&mu;&eta;&sigma;&eta; &epsilon;&nu;\u03ad&rho;&gamma;&epsilon;&iota;&alpha;&sigmaf;, &kappa;&alpha;&theta;\u03ce&sigmaf; \u03ad&chi;&omicron;&upsilon;&nu; &tau;&omicron;&upsilon;&sigmaf; &upsilon;&psi;&eta;&lambda;\u03cc&tau;&epsilon;&rho;&omicron;&upsilon;&sigmaf; &sigma;&upsilon;&nu;&tau;&epsilon;&lambda;&epsilon;&sigma;&tau;\u03ad&sigmaf; SCOP &kappa;&alpha;&iota; SEER &sigma;&tau;&eta;&nu; &alpha;&gamma;&omicron;&rho;\u03ac.</p>\r\n"
   },
   "model": "products.category",
@@ -12,10 +13,11 @@
 },
 {
   "fields": {
-    "slug": "hmikentrika-proionta",
-    "name_en": "Light Commercial",
     "name": "\u0397\u03bc\u03b9\u03ba\u03b5\u03bd\u03c4\u03c1\u03b9\u03ba\u03ac \u03a0\u03c1\u03bf\u03ca\u03cc\u03bd\u03c4\u03b1",
+    "image": "products/category/light-com_envKQEl.jpg",
     "description_en": "<p>Solutions for professionals, from professionals. Digital and Super Digital Inverter latest technolgies offer the ideal solutions for small business. The toshiba range provides a wide choice of indoor units with optimum performance and efficiency.</p>\r\n",
+    "name_en": "Light Commercial",
+    "slug": "hmikentrika-proionta",
     "description": "<p>&Lambda;\u03cd&sigma;&epsilon;&iota;&sigmaf; &alpha;&pi;\u03cc &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;\u03af&epsilon;&sigmaf; &gamma;&iota;&alpha; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;\u03af&epsilon;&sigmaf;. &Tau;&alpha; Digital &kappa;&alpha;&iota; Super Digital Inverter &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;\u03af&alpha;&sigmaf; &tau;&epsilon;&chi;&nu;&omicron;&lambda;&omicron;&gamma;\u03af&alpha;&sigmaf;, &epsilon;\u03af&nu;&alpha;&iota; &eta; &iota;&delta;&alpha;&nu;&iota;&kappa;\u03ae &lambda;\u03cd&sigma;&eta; &gamma;&iota;&alpha; &tau;&iota;&sigmaf; &mu;&iota;&kappa;&rho;\u03ad&sigmaf; &epsilon;&pi;&iota;&chi;&epsilon;&iota;&rho;\u03ae&sigma;&epsilon;&iota;&sigmaf;. &Eta; &pi;&rho;&omicron;\u03ca&omicron;&nu;&tau;&iota;&kappa;\u03ae &sigma;&epsilon;&iota;&rho;\u03ac &tau;&eta;&sigmaf; Toshiba &pi;&alpha;&rho;\u03ad&chi;&epsilon;&iota; &mu;&iota;&alpha; &epsilon;&upsilon;&rho;&epsilon;\u03af&alpha; &epsilon;&pi;&iota;&lambda;&omicron;&gamma;\u03ae &alpha;&pi;\u03cc &epsilon;&sigma;&omega;&tau;&epsilon;&rho;&iota;&kappa;\u03ad&sigmaf; &mu;&omicron;&nu;\u03ac&delta;&epsilon;&sigmaf; &mu;&epsilon; &beta;\u03ad&lambda;&tau;&iota;&sigma;&tau;&eta; &alpha;&pi;\u03cc&delta;&omicron;&sigma;&eta; &kappa;&alpha;&iota; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;&sigma;&mu;&alpha;&tau;&iota;&kappa;\u03cc&tau;&eta;&tau;&alpha;.</p>\r\n"
   },
   "model": "products.category",
@@ -23,10 +25,11 @@
 },
 {
   "fields": {
-    "slug": "kentrika-proionta",
-    "name_en": "Commercial systems",
     "name": "\u039a\u03b5\u03bd\u03c4\u03c1\u03b9\u03ba\u03ac \u03a0\u03c1\u03bf\u03ca\u03cc\u03bd\u03c4\u03b1",
+    "image": "products/category/commersial.jpeg",
     "description_en": "<p>The most advanced air conditioning system for commercial applications. VRF products provide comfort, safety, reliability, flexibility and energy savings. They are the perfect choice for commercial centres, office towers, hospitals and hotels.</p>\r\n",
+    "name_en": "Commercial systems",
+    "slug": "kentrika-proionta",
     "description": "<p>&Tau;&omicron; &pi;&iota;&omicron; &pi;&rho;&omicron;&eta;&gamma;&mu;\u03ad&nu;&omicron; &sigma;\u03cd&sigma;&tau;&eta;&mu;&alpha; &kappa;&lambda;&iota;&mu;&alpha;&tau;&iota;&sigma;&mu;&omicron;\u03cd &gamma;&iota;&alpha; &kappa;&epsilon;&nu;&tau;&rho;&iota;&kappa;\u03ad&sigmaf; &epsilon;&phi;&alpha;&rho;&mu;&omicron;&gamma;\u03ad&sigmaf;. &Tau;&alpha; &pi;&rho;&omicron;\u03ca\u03cc&nu;&tau;&alpha; VRF &pi;&rho;&omicron;&sigma;&phi;\u03ad&rho;&omicron;&upsilon;&nu; \u03ac&nu;&epsilon;&sigma;&eta;, &alpha;&sigma;&phi;\u03ac&lambda;&epsilon;&iota;&alpha;, &alpha;&xi;&iota;&omicron;&pi;&iota;&sigma;&tau;\u03af&alpha;, &epsilon;&upsilon;&epsilon;&lambda;&iota;&xi;\u03af&alpha; &kappa;&alpha;&iota; &epsilon;&xi;&omicron;&iota;&kappa;&omicron;&nu;\u03cc&mu;&eta;&sigma;&eta; &epsilon;&nu;\u03ad&rho;&gamma;&epsilon;&iota;&alpha;&sigmaf;. &Epsilon;\u03af&nu;&alpha;&iota; &eta; &tau;\u03ad&lambda;&epsilon;&iota;&alpha; &epsilon;&pi;&iota;&lambda;&omicron;&gamma;\u03ae &gamma;&iota;&alpha; &epsilon;&mu;&pi;&omicron;&rho;&iota;&kappa;\u03ac &kappa;\u03ad&nu;&tau;&rho;&alpha;, &pi;\u03cd&rho;&gamma;&omicron;&upsilon;&sigmaf; &gamma;&rho;&alpha;&phi;&epsilon;\u03af&omega;&nu;, &nu;&omicron;&sigma;&omicron;&kappa;&omicron;&mu;&epsilon;\u03af&alpha; &kappa;&alpha;&iota; &xi;&epsilon;&nu;&omicron;&delta;&omicron;&chi;&epsilon;\u03af&alpha;.</p>\r\n"
   },
   "model": "products.category",
@@ -34,10 +37,11 @@
 },
 {
   "fields": {
-    "slug": "proionta-8ermanshs",
-    "name_en": "Heating",
     "name": "\u03a0\u03c1\u03bf\u03ca\u03cc\u03bd\u03c4\u03b1 \u0398\u03ad\u03c1\u03bc\u03b1\u03bd\u03c3\u03b7\u03c2",
+    "image": "products/category/residential.jpg",
     "description_en": "<h2>&nbsp;</h2>\r\n\r\n<p>Toshiba Est&iacute;a air to water heat pumps is the ideal solution to increase energy efficiency, using air as a main source of energy. This is an all in one system designed to deliver the right temperature for space heating, for domestic sanitary hot water and with the additional advantage of having an air conditioner in the warmer seasons.</p>\r\n",
+    "name_en": "Heating",
+    "slug": "proionta-8ermanshs",
     "description": "<p>&Omicron;&iota; &alpha;&nu;&tau;&lambda;\u03af&epsilon;&sigmaf; &theta;&epsilon;&rho;&mu;\u03cc&tau;&eta;&tau;&alpha;&sigmaf; &alpha;\u03ad&rho;&omicron;&sigmaf;-&nu;&epsilon;&rho;&omicron;\u03cd Estia &tau;&eta;&sigmaf; Toshiba, &epsilon;\u03af&nu;&alpha;&iota; &eta; &iota;&delta;&alpha;&nu;&iota;&kappa;\u03ae &lambda;\u03cd&sigma;&eta; &gamma;&iota;&alpha; &tau;&eta;&nu; &alpha;\u03cd&xi;&eta;&sigma;&eta; &tau;&eta;&sigmaf; &epsilon;&xi;&omicron;&iota;&kappa;&omicron;&nu;\u03cc&mu;&eta;&sigma;&eta;&sigmaf; &epsilon;&nu;\u03ad&rho;&gamma;&epsilon;&iota;&alpha;&sigmaf;, &kappa;&alpha;&theta;\u03ce&sigmaf; &chi;&rho;&eta;&sigma;&iota;&mu;&omicron;&pi;&omicron;&iota;&omicron;\u03cd&nu; &tau;&omicron;&nu; &alpha;\u03ad&rho;&alpha; &omega;&sigmaf; &tau;&eta;&nu; &kappa;\u03cd&rho;&iota;&alpha; &pi;&eta;&gamma;\u03ae &epsilon;&nu;\u03ad&rho;&gamma;&epsilon;&iota;&alpha;&sigmaf;. &Alpha;&upsilon;&tau;\u03cc &tau;&omicron; \u03cc&lambda;&alpha; &sigma;&epsilon; \u03ad&nu;&alpha; &sigma;\u03cd&sigma;&tau;&eta;&mu;&alpha; \u03ad&chi;&epsilon;&iota; &sigma;&chi;&epsilon;&delta;&iota;&alpha;&sigma;&tau;&epsilon;\u03af &gamma;&iota;&alpha; &nu;&alpha; &pi;&rho;&omicron;&sigma;&phi;\u03ad&rho;&epsilon;&iota; &tau;&eta; &sigma;&omega;&sigma;&tau;\u03ae &theta;&epsilon;&rho;&mu;&omicron;&kappa;&rho;&alpha;&sigma;\u03af&alpha; &gamma;&iota;&alpha; &theta;\u03ad&rho;&mu;&alpha;&nu;&sigma;&eta;, &pi;&alpha;&rho;&alpha;&gamma;&omega;&gamma;\u03ae &zeta;&epsilon;&sigma;&tau;&omicron;\u03cd &nu;&epsilon;&rho;&omicron;\u03cd &chi;&rho;\u03ae&sigma;&eta;&sigmaf; &kappa;&alpha;&iota; &mu;&epsilon; &tau;&omicron; &epsilon;&pi;&iota;&pi;&rho;\u03cc&sigma;&theta;&epsilon;&tau;&omicron; &pi;&lambda;&epsilon;&omicron;&nu;\u03ad&kappa;&tau;&eta;&mu;&alpha; &tau;&eta;&sigmaf; \u03cd&pi;&alpha;&rho;&xi;&eta;&sigmaf; &kappa;&lambda;&iota;&mu;&alpha;&tau;&iota;&sigma;&mu;&omicron;\u03cd &kappa;&alpha;&tau;\u03ac &tau;&omicron;&upsilon;&sigmaf; &kappa;&alpha;&lambda;&omicron;&kappa;&alpha;&iota;&rho;&iota;&nu;&omicron;\u03cd&sigmaf; &mu;\u03ae&nu;&epsilon;&sigmaf;.</p>\r\n"
   },
   "model": "products.category",
@@ -90,5 +94,53 @@
   },
   "model": "products.product",
   "pk": 3
+},
+{
+  "fields": {
+    "category": 2,
+    "short_description_en": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+    "name": "Test \u0394\u03bf\u03ba\u03b9\u03bc\u03b1\u03c3\u03c4\u03b9\u03ba\u03cc",
+    "created": "2016-10-06T09:47:21.674Z",
+    "specifications": "<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n",
+    "image": "products/2016/10/06/air-conditioning-repair.jpg",
+    "short_description": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout",
+    "specifications_en": "<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n",
+    "name_en": "Test Product",
+    "slug": "test-dokimastiko"
+  },
+  "model": "products.product",
+  "pk": 4
+},
+{
+  "fields": {
+    "category": 3,
+    "short_description_en": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n",
+    "name": "Test \u0394\u03bf\u03ba\u03b9\u03bc\u03b1\u03c3\u03c4\u03b9\u03ba\u03cc 2",
+    "created": "2016-10-06T09:49:13.037Z",
+    "specifications": "<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n",
+    "image": "products/2016/10/06/air-conditioning-repair_qsAwD5M.jpg",
+    "short_description": "It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.\r\n\r\n",
+    "specifications_en": "<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n",
+    "name_en": "Test Product 2",
+    "slug": "test-dokimastiko-2"
+  },
+  "model": "products.product",
+  "pk": 5
+},
+{
+  "fields": {
+    "category": 4,
+    "short_description_en": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ",
+    "name": "Test \u0394\u03bf\u03ba\u03b9\u03bc\u03b1\u03c3\u03c4\u03b9\u03ba\u03cc 3",
+    "created": "2016-10-06T09:50:02.149Z",
+    "specifications": "<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n",
+    "image": "products/2016/10/06/air-conditioning-repair_LHXj49X.jpg",
+    "short_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley ",
+    "specifications_en": "<p><strong>Lorem Ipsum</strong>&nbsp;is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&#39;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>\r\n",
+    "name_en": "Test Product 3",
+    "slug": "test-dokimastiko-3"
+  },
+  "model": "products.product",
+  "pk": 6
 }
 ]
