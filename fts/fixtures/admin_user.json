@@ -1,4 +1,4 @@
-local
+
 [
 {
   "fields": {
@@ -8,7 +8,7 @@ local
     "is_active": true,
     "is_superuser": true,
     "is_staff": true,
-    "last_login": "2016-10-06T09:45:46.119Z",
+    "last_login": "2016-10-07T13:06:50.639Z",
     "groups": [],
     "user_permissions": [],
     "password": "pbkdf2_sha256$20000$dhenJiSsSlzs$pWOwRWflSlAwv09+ogtALUapRZqjYCvebBlXmj81gaM=",
@@ -17,5 +17,23 @@ local
   },
   "model": "auth.user",
   "pk": 1
+},
+{
+  "fields": {
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "is_active": true,
+    "is_superuser": true,
+    "is_staff": true,
+    "last_login": null,
+    "groups": [],
+    "user_permissions": [],
+    "password": "pbkdf2_sha256$20000$u4DUfAw8a9G6$lSMTsyFsrPSRw8InLhEAxdM9sCIA6CncY6XX9n2Nozs=",
+    "email": "kkampardi@gmail.com",
+    "date_joined": "2016-10-07T21:31:31.017Z"
+  },
+  "model": "auth.user",
+  "pk": 2
 }
 ]

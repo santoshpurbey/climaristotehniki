@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 
 class ProductTest(LiveServerTestCase):
-    fixtures = [ 'test_admin_user.json']
+    fixtures = [ 'admin_user.json']
 
     def setUp(self):
         self.browser = webdriver.Firefox()
@@ -22,10 +22,10 @@ class ProductTest(LiveServerTestCase):
 
         # user types in username and passwords add hits return
         username_field = self.browser.find_element_by_name('username')
-        username_field.send_keys('test_admin')
+        username_field.send_keys('admin')
 
         password_field = self.browser.find_element_by_name('password')
-        password_field.send_keys('12341234')
+        password_field.send_keys('admin')
         password_field.send_keys(Keys.RETURN)
 
         # username and pass are accepted
