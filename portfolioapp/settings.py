@@ -72,6 +72,7 @@ INSTALLED_APPS = (
     'ckeditor',
 )
 
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -120,10 +121,9 @@ WSGI_APPLICATION = 'portfolioapp.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
 LANGUAGES = (
-  ('el', ('Greek')),
   ('en', ('English')),
+  ('el', ('Greek')),
 )
-LANGUAGE_CODE = 'el'
 
 # to load the internationalization machinery.
 USE_I18N = True
